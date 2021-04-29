@@ -2,6 +2,13 @@
 
 This Terraform project will deploy an Application load balancer as a module from the source [aws-alb Terraform Project](https://github.com/Vinayvenkatesh08/aws-alb.git)
 
+Following resources are created
+* Application load balancer (internal or external)
+* Load balancer listener(s) (HTTP, HTTPS or both)
+* Target group(s) (HTTP, HTTPS or both)
+* Security groups
+
+
 ## Required inputs
 
 Inputs required for the deployment needs to be keyed inside the specifed tags <>
@@ -20,6 +27,13 @@ Inputs required for the deployment needs to be keyed inside the specifed tags <>
 AWS CLI Profile
 
 
-
 ## Usage
 ```./deploy.sh```
+
+## Outputs
+
+* loadbalancer_name
+* loadbalancer_arn
+* loadbalancer_dns_name
+* loadbalancer_arn
+* loadbalancer_zone_id
