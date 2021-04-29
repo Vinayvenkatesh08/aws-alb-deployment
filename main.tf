@@ -7,7 +7,7 @@ module "alb" {
   lb_name            = "<loadbalancer-name>"
   create_internal_lb = true
   lb_security_group_ids   = ["<sg-id1>", "<sg-id2>"]
-  lb_subnet_ids           = ["<subnet-id1>", "<subnet-id2>"]
+  lb_subnet_ids           = ["<subnet-id1>"]
   create_lb_http_listener = true
   lb_http_listener_port   = 80
   http_target_group_parameters = [
